@@ -5,3 +5,6 @@ import pandas as pd
 df = pd.read_csv('data.csv')
 average_value = df['value'].mean()
 print(average_value)
+
+
+print(f"Average value is {average_value}")

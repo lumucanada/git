@@ -1,12 +1,13 @@
-# 使用 pandas 读取 data.csv
-# 计算列名为 value 的平均值
+#!/usr/bin/env python3
 import pandas as pd
 
-df = pd.read_csv('data.csv')
-average_value = df['value'].mean()
-print(average_value)
+def main():
+	try:
+		df = pd.read_csv('data.csv')
+		avg = df['value'].mean()
+		print(avg)
+	except Exception as e:
+		print('Error:', e)
 
-
-print(f"Average value is {average_value}")
-
-sss
+if __name__ == '__main__':
+	main()

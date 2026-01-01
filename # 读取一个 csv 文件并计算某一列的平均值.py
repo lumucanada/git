@@ -8,3 +8,5 @@ print(average_value)
 
 
 print(f"Average value is {average_value}")
+
+sss
